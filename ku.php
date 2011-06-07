@@ -1,8 +1,5 @@
 <html><head>
 <title>Solve a sudoku puzzle -- DavidRodal.com</title>
-Solve a sudoku puzzle.<br>
-Enter the numbers of the puzzle, or the solution as far as you have
-gotten, and push solve.
 <style type="text/css">
 .x11{border-width:4px 0px 0px 4px;}
 .x21{border-width:4px 0px 0px 0px;}
@@ -15,6 +12,9 @@ gotten, and push solve.
 .x00{border-width:0px 4px 4px 0px;}
 </style>
 </head><body>
+Solve a sudoku puzzle.<br>
+Enter the numbers of the puzzle, or the solution as far as you have
+gotten, and push solve.
 <?php
 	$cell = array(array());
 	if($_GET["solve"] == 1){
@@ -50,7 +50,7 @@ require_once "du.php";
 		$x = $j%3;
 		$y = $i%3;
 		print "<td class=\"x$x$y\">";
-		print "<input size=2 type=text name=\"cell[$j][$i]\" value=\"".$cell[$j][$i]."\"></input>";
+		print "<input size=2 type=text name=\"cell[$j][$i]\" value=\"".$cell[$j][$i]."\">";
 		//print "1";
 		print "</td>\n";
 	}
