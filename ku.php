@@ -16,9 +16,12 @@ Solve a sudoku puzzle.<br>
 Enter the numbers of the puzzle, or the solution as far as you have
 gotten, and push solve.
 <?php
+/*
+ * there are not enough comments, this one doesn't count
+ */
+require_once "du.php";
 	$cell = array(array());
 	if($_GET["solve"] == 1){
-require_once "du.php";
 		$b = new board();
 		$cell = $_GET["cell"];
 		for($i = 1;$i <= 9;$i++){
